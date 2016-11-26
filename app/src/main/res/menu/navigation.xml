@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/item5" android:title="menu5" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/item6" android:title="menu6" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/item7" android:title="menu7" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/item8" android:title="menu8" android:icon="@mipmap/ic_launcher" />
+    </group>
+
+    <item android:title="Account">
+    <menu>
+        <item android:id="@+id/item1" android:title="menu1" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/item2" android:title="menu2" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/item3" android:title="menu3" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/item4" android:title="menu4" android:icon="@mipmap/ic_launcher" />
+    </menu>
+    </item>
+</menu>

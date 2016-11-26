@@ -31,25 +31,25 @@ public class SplashActivity extends Activity {
         rl_splahs_root = (RelativeLayout) findViewById(R.id.rl_splahs_root);
 
         //渐变动画，缩放动画，旋转动画
-        AlphaAnimation aa = new AlphaAnimation(0,1);
+        AlphaAnimation aa = new AlphaAnimation(1,1);
 //        aa.setDuration(500);//持续播放时间
         aa.setFillAfter(true);
 
-        ScaleAnimation sa = new ScaleAnimation(0,1,0,1,ScaleAnimation.RELATIVE_TO_SELF,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f);
-//        sa.setDuration(500);
-        sa.setFillAfter(true);
-
-        RotateAnimation ra = new RotateAnimation(0,360,RotateAnimation.RELATIVE_TO_SELF,0.5f,RotateAnimation.RELATIVE_TO_SELF,0.5f);
-//        ra.setDuration(500);
-        ra.setFillAfter(true);
+//        ScaleAnimation sa = new ScaleAnimation(0,1,0,1,ScaleAnimation.RELATIVE_TO_SELF,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f);
+////        sa.setDuration(500);
+//        sa.setFillAfter(true);
+//
+//        RotateAnimation ra = new RotateAnimation(0,360,RotateAnimation.RELATIVE_TO_SELF,0.5f,RotateAnimation.RELATIVE_TO_SELF,0.5f);
+////        ra.setDuration(500);
+//        ra.setFillAfter(true);
 
 
         AnimationSet set = new AnimationSet(false);
         //添加三个动画没有先后顺序,便于同时播放动画
-        set.addAnimation(ra);
+        //  set.addAnimation(ra);
         set.addAnimation(aa);
-        set.addAnimation(sa);
-        set.setDuration(2000);
+        //set.addAnimation(sa);
+        set.setDuration(4000);
 
 
         rl_splahs_root.startAnimation(set);
@@ -87,7 +87,7 @@ public class SplashActivity extends Activity {
 
             }else{
                 //如果没有进入过主页面，进入引导页面
-                intent = new Intent(SplashActivity.this,GuideActivity.class);
+                intent = new Intent(SplashActivity.this,MainActivity.class);
             }
             startActivity(intent);
 

@@ -1,21 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:orientation="vertical"
     tools:context="com.twoplugs.mobile.MainActivity">
 
-    <android.support.v7.widget.RecyclerView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutManager="LinearLayoutManager"
-        android:id="@+id/recycler"
-        />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-</RelativeLayout>
+     <android.support.v4.widget.DrawerLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:id="@+id/drawer"
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+             <android.support.v4.view.ViewPager
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:id="@+id/pager">
+             </android.support.v4.view.ViewPager>
+
+             <android.support.design.widget.TabLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@color/colorPrimaryDark"
+                 app:tabTextColor="@android:color/white"
+                 app:tabSelectedTextColor="@color/accent"
+                 app:tabMode="fixed"
+
+                 app:tabTextAppearance="@android:style/TextAppearance.Small"
+                 android:id="@+id/tab" />
+  </LinearLayout>
+
+          <android.support.design.widget.NavigationView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:menu="@menu/navigation"
+              android:layout_gravity="start"
+              android:id="@+id/navigation"
+              app:itemTextColor="@color/navigation_select"
+              app:itemIconTint="@color/navigation_select"
+              app:headerLayout="@layout/nav_header"
+              >
+
+
+          </android.support.design.widget.NavigationView>
+
+
+     </android.support.v4.widget.DrawerLayout>
+
+
+
+</LinearLayout>
