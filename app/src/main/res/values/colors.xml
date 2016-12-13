@@ -10,5 +10,7 @@
     <color name="btn_green">#add14b</color>
 
     <color name="bg_tabbar">#101010</color>
-    #
+
+    <color name="control_bg">#aed24c</color>
+
 </resources>

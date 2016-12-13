@@ -22,13 +22,13 @@ public class SplashActivity extends Activity {
      * 静态常量
      */
     public static final String START_MAIN = "start_main";
-    private RelativeLayout rl_splahs_root;
+    private RelativeLayout rl_splash_root;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        rl_splahs_root = (RelativeLayout) findViewById(R.id.rl_splahs_root);
+        rl_splash_root = (RelativeLayout) findViewById(R.id.rl_splash_root);
 
         //渐变动画，缩放动画，旋转动画
         AlphaAnimation aa = new AlphaAnimation(1,1);
@@ -49,10 +49,10 @@ public class SplashActivity extends Activity {
         //  set.addAnimation(ra);
         set.addAnimation(aa);
         //set.addAnimation(sa);
-        set.setDuration(4000);
+        set.setDuration(2000);
 
 
-        rl_splahs_root.startAnimation(set);
+        rl_splash_root.startAnimation(set);
 
         set.setAnimationListener(new MyAnimationListener());
 
