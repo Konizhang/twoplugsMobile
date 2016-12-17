@@ -28,7 +28,7 @@ public class TransFragment extends Fragment {
     }
 
     public static TransFragment newInstance(Context context, String text) {
-        ((AppCompatActivity)context).getSupportActionBar().setTitle("trans_page_layout");
+     //   ((AppCompatActivity)context).getSupportActionBar().setTitle("trans_page_layout");
         TransFragment f = new TransFragment();
         Bundle b = new Bundle();
         b.putString("trans_text", text);

@@ -29,7 +29,7 @@ public class PlugsFragment extends Fragment {
 
     public static PlugsFragment newInstance(Context context, String text) {
 
-        ((AppCompatActivity)context).getSupportActionBar().setTitle("plugs_text");
+       // ((AppCompatActivity)context).getSupportActionBar().setTitle("plugs_text");
         PlugsFragment f = new PlugsFragment();
         Bundle b = new Bundle();
         b.putString("plugs_text", text);

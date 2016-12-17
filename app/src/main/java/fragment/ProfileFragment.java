@@ -3,7 +3,7 @@ package fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +29,7 @@ public class ProfileFragment extends Fragment {
 
     public static ProfileFragment newInstance(Context context, String text) {
 
-        ((AppCompatActivity)context).getSupportActionBar().setTitle("profile_text");
+
         ProfileFragment f = new ProfileFragment();
         Bundle b = new Bundle();
         b.putString("profile_text", text);

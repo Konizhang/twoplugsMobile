@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/item5" android:title="ASSS" android:icon="@mipmap/ic_launcher" />
-        <item android:id="@+id/item6" android:title="menu6" android:icon="@mipmap/ic_launcher" />
-        <item android:id="@+id/item7" android:title="menu7" android:icon="@mipmap/ic_launcher" />
-        <item android:id="@+id/item8" android:title="menu8" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/sidebar_notification" android:title="Notification" android:icon="@drawable/search" />
+        <item android:id="@+id/sidebar_servicematch" android:title="Service Match" android:icon="@mipmap/ic_launcher" />
+        <item android:id="@+id/sidebar_favourite" android:title="Favorite" android:icon="@drawable/favorite" />
+        <item android:id="@+id/sidebar_Settings" android:title="Settings" android:icon="@drawable/settings" />
+        <item android:id="@+id/sidebar_Help" android:title="Help" android:icon="@drawable/help" />
+        <item android:id="@+id/sidebar_logout" android:title="Logout" android:icon="@drawable/logout" />
     </group>
 
-    <item android:title="Account">
-        <menu>
-            <item android:id="@+id/item1" android:title="SSS" android:icon="@mipmap/ic_launcher" />
-            <item android:id="@+id/item2" android:title="menu2" android:icon="@mipmap/ic_launcher" />
-            <item android:id="@+id/item3" android:title="menu3" android:icon="@mipmap/ic_launcher" />
-            <item android:id="@+id/item4" android:title="menu4" android:icon="@mipmap/ic_launcher" />
-        </menu>
-    </item>
+
 </menu>

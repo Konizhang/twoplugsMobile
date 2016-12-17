@@ -29,7 +29,7 @@ public class MessageFragment extends Fragment {
 
     public static MessageFragment newInstance(Context context, String text) {
 
-        ((AppCompatActivity)context).getSupportActionBar().setTitle("MessageFragment");
+      //  ((AppCompatActivity)context).getSupportActionBar().setTitle("MessageFragment");
 
         MessageFragment f = new MessageFragment();
         Bundle b = new Bundle();
